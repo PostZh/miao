@@ -6,99 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    #one {
+    body > :first-child {
       color: red;
     }
-  </style>
-  <style>
-    #tow:hover {
+
+      [tabindex="1"]:focus {
+        color: blue;
+      }
+
+    [tabindex="1"]:hover {
       color: red;
     }
-  </style>
-  <style>
-    #tow:active {
+
+    [tabindex="1"]:active {
       color: green;
     }
-  </style>
-  <style>
-    #tow:focus {
-      outline-color: blue;
-    }
-  </style>
-  <style>
-    p>span {
+
+    p.ac :first-child {
       color: red;
     }
-  </style>
-  <style>
-    #three {
+
+    p.ac :nth-child(2) {
       color: green;
     }
-  </style>
-  <style>
-    #four {
+
+    p.ac :last-child {
       color: blue;
     }
-  </style>
-  <style>
+
     a:link {
       color: pink;
     }
-  </style>
-  <style>
+
     a:visited {
       color: orange;
     }
-  </style>
-  <style>
+
     a[href="mailto:123456@qq.com"],
     [href="mailto:123456@qq.com"] {
       color: blue;
     }
-  </style>
-  <style>
+
     a[href="tel:123456"],
     [href="tel:123456"] {
       color: yellow;
     }
-  </style>
-  <style>
+
     [href="aaaa.pdf"],
     [href="aaaa.pdf"] {
       font-size: 30px;
     }
-  </style>
-  <style>
+
     ul.red>:nth-child(4),
     ul.red>:nth-child(5),
     ul.red>:nth-child(6),
     ul.red>:nth-child(7) {
       color: red;
     }
-  </style>
-<style>
+
   ul.class2 :nth-child(-n+25){
     color: red;
   }
-</style>
-<style>
+
   ul.class2 :nth-child(n+65) {
     color: green;
   }
-</style>
-<style>
+
   ul.class2 :nth-child(n+35):nth-child(-n+50) {
     color: blue;
+  }
+
+  .prime :first-child {
+    color: red
   }
 </style>
 </head>
 <body>
-  <p id="one">红色</p>
+  <p>红色</p>
   <p id="tow" tabindex="1">鼠标悬浮时为红色, 按下去时为绿色, 获得焦点时为蓝色</p>
-  <p>
+  <p class="ac">
     <span>红色</span>
-    <span id="three">绿色</span>
-    <span id="four">蓝色</span>
+    <span>绿色</span>
+    <span>蓝色</span>
   </p>
 
 <p>
@@ -248,7 +237,7 @@
 
 <p>让所有的质/素数(prime)(2，3，5，7，11，13......) 跟合数(4，6，8，9，10......) 为不同的颜色</p>
 
-<ul>
+<ul class="prime">
   <li>01</li>
   <li>02</li>
   <li>03</li>
