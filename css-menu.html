@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu {
+      padding: .5em;
+    }
+    .menu > li {
+      display: inline-block;
+    }
+    .menu li {
+      position: relative;
+      white-space: nowrap;
+      padding: 0 .5em;
+    }
+    .menu ul {
+      padding-top: .5em;
+      padding-bottom: .5em;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      display: none;
+      box-shadow: 0 0 5px #333;
+      border-radius: .3em;
+    }
+    .menu,.menu ul{
+      background-color: #3c3c3c;
+      color: #c4c4c4;
+    }
+    .menu li:hover > ul {
+      display: block;
+    }
+    .menu ul ul {
+      left: 100%;
+      top: .5em;
+    }
+    .menu li:hover {
+      background-color: #697070;
+    }
+    .menu li  li:hover {
+      background-color: cornflowerblue;
+    }
+    .menu li li {
+      padding: 0 140px 0 10px;
+    }
+    .menu li li > span {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+    li .xian {
+      border-top: 1px solid;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .menu li ul {
+      margin-left: -10px;
+    }
+    body {
+      background-color: #303030;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+  <ul class="menu">
+    <li>文件(F)
+      <ul>
+        <li>新建文本文件<span>Ctrl+N</span></li>
+        <li>新建文本... <span>Ctrl+Alt+Windows+N</span></li>
+        <li>新建窗口<span>Ctrl+Shift+N</span></li>
+        <li class="xian"></li>
+        <li>打开文件<span>Ctrl+O</span></li>
+        <li>打开文件夹<span>Ctrl+K Ctrl+O</span></li>
+        <li>从文件打开工作区</li>
+        <li>打开最近的文件<span>></span>
+          <ul>
+            <li>更多</li>
+            <li>清除最近打开记录</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>编辑(E)
+      <ul>
+        <li>撤销<span>Ctrl+Z</span></li>
+        <li>恢复<span>Ctrl+Y</span></li>
+        <li class="xian"></li>
+        <li>剪切<span>Ctrl+X</span></li>
+        <li>复制<span>Ctrl+C</span></li>
+        <li>粘贴<span>Ctrl+V</span></li>
+      </ul>
+    </li>
+    <li>选择(S)
+      <ul>
+        <li>全选<span>Ctrl+A</span></li>
+        <li>扩大选区 </li>
+        <li>缩小选区 <span>Shift+Alt+LeftArrow</span></li>
+        <li class="xian"></li>
+        <li>向上复制一行</li>
+      </ul>
+    </li>
+    <li>查看(V)
+      <ul>
+        <li>命令面板... <span>Ctrl+Shift+P</span></li>
+        <li>打开视图...</li>
+        <li class="xian"></li>
+        <li>外观<span>></span>
+        <ul>
+          <li>全屏<span>F11</span></li>
+          <li>禅模式<span>Ctrl+K Z</span></li>
+          <li>居中布局</li>
+          <li class="xian"></li>
+          <li>√显示菜单栏</li>
+        </ul>
+      </li>
+        <li></li>
+        <li></li>
+      </ul>
+    </li>
+    <li>转到(G)
+      <ul>
+        <li>返回</li>
+        <li>前进</li>
+        <li>上次编辑位置</li>
+        <li class="xian"></li>
+        <li>切换编辑器<span>></span>
+          <ul>
+            <li>下一个编辑器</li>
+            <li>上一个编辑器</li>
+            <li class="xian"></li>
+            <li>下一个使用过的编辑器</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>运行(R)</li>
+    <li>终端(T)</li>
+    <li>帮助(H)</li>
+  </ul>
+
+</body>
+</html>
