@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+table {
+  width: 100%;
+  margin: auto;
+}
+.table {
+  border-collapse: collapse;
+}
+.table thead {
+  text-align: left;
+}
+.table tr {
+  border-bottom: 1px solid #dee2e6;
+}
+.table tbody tr:first-child {
+  border-top: 2px solid;
+}
+.table td,.table thead th {
+  padding: 10px;
+}
+
+.table-sm td,.table-sm thead th{
+  padding: 0;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table-hover tbody tr:hover{
+  background-color: #ececec;
+}
+
+.table-bordered tr td ,.table-bordered thead th {
+  border:1px solid #dee2e6;
+}
+
+.table-dark {
+  background-color: #212529;
+  color: white;
+}
+
+.table-striped-columes tr td:nth-child(2n+1) {
+  background-color: #f2f2f2;
+}
+  </style>
+</head>
+<body>
+  <br>
+
+  <b>Table</b>
+
+  <br><br>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <b>Table-sm</b>
+
+  <br><br>
+
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <b>Table-striped</b>
+
+  <br><br>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <b>Table-hover</b>
+
+  <br><br>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <b>Table-bordered</b>
+
+  <br><br>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <b>Table-dark</b>
+
+  <br><br>
+
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <b>Table-striped-columes</b>
+
+  <br><br>
+
+  <table class="table table-striped-columes">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <b>Table Table-sm Table-striped Table-hover Table-bordered Table-dark</b>
+
+  <br><br>
+
+  <table class="table table-sm table-striped table-hover table-bordered table-dark">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Quisquam.</th>
+        <th>Voluptatum.</th>
+        <th>Nulla.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>A?</td>
+        <td>Veritatis.</td>
+        <td>Facere!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Magnam.</td>
+        <td>Exercitationem!</td>
+        <td>Sequi.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Adipisci.</td>
+        <td>Velit?</td>
+        <td>Sint.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Deleniti?</td>
+        <td>Sint.</td>
+        <td>Accusamus.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
