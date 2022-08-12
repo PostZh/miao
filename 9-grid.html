@@ -24,6 +24,52 @@
       border: 5px solid red;
       z-index: 1;
     }
+
+    table {
+      border-spacing: 0;
+      width: 150px;
+      height: 150px;
+      box-sizing: border-box;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    td {
+      width: 50px;
+      height: 50px;
+      color: green;
+      text-align: center;
+    }
+    tr,col {
+      border: 5px solid orange;
+    }
+    td:hover {
+      border: 5px solid cadetblue;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      width: 140px;
+      height: 140px;
+      background-color: wheat;
+
+    }
+    li {
+      border: 5px solid plum;
+      float: left;
+      width: 50px;
+      height: 50px;
+      box-sizing: border-box;
+      margin: 0 -5px -5px 0;
+      position: relative;
+      color: green;
+      text-align: center;
+      line-height: 40px;
+    }
+    li:hover {
+      border: 5px solid slategray;
+      z-index: 8;
+    }
   </style>
 </head>
 <body>
@@ -38,5 +84,44 @@
     <span>8</span>
     <span>9</span>
   </div>
+
+<br><br>
+
+<table>
+  <col>
+  <col>
+  <col>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+</ul>
 </body>
 </html>
